@@ -609,6 +609,16 @@ export const adConfig = {
 
   postquare: {},
 
+  pubguru: {
+    prefetch: 'https://www.googletagservices.com/tag/js/gpt.js',
+    preconnect: [
+      'https://partner.googleadservices.com',
+      'https://securepubads.g.doubleclick.net',
+      'https://tpc.googlesyndication.com',
+    ],
+    renderStartImplemented: true,
+  },
+
   pubmatic: {
     prefetch: 'https://ads.pubmatic.com/AdServer/js/amp.js',
   },
