@@ -22,10 +22,12 @@ import {loadScript, validateData} from '../3p/3p';
  */
 export function pubguru(global, data) {
   validateData(data, ['publisher', 'slot']);
-
+  console.log('**--PUBGURU AD--**',global,data);
   const el = global.document.createElement('div');
   el.setAttribute('data-ad-publisher', data.publisher);
   el.setAttribute('data-ad-slot', data.slot);
+  el.setAttribute('data-width', data.width);
+  el.setAttribute('data-height', data.height);
   el.setAttribute('class','ad-slot');
   el.setAttribute('id','the-ad-unit');
   global.document.getElementById('c').appendChild(el);
